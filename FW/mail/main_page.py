@@ -1,6 +1,6 @@
 from selenium.webdriver.common.by import By
 
-from FW.mail.any_page import AnyPage
+from FW.any_page import AnyPage
 
 
 class Locator:

@@ -6,5 +6,6 @@ class Settings:
     }
 
     page = {
-        'Link': 'https://mail.ru'
+        'MailRu': 'https://mail.ru',
+        'ShikimoriOne': 'https://shikimori.one/'
     }

@@ -1,4 +1,4 @@
-from selenium.webdriver import Keys
+from selenium.webdriver import Keys, ActionChains
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
@@ -69,4 +69,10 @@ class FWBase:
 
     def refresh_page(self):
         self.GetDriver().refresh()
+        return self
+    
+    def hover_element(self, locator):
+        element = self.find_element(locator)
+        action = ActionChains(self.GetDriver())
+        action.move_to_element(element).perform()
         return self
